@@ -1,0 +1,552 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@900&family=Noto+Serif:ital@1&family=Oswald&family=Poppins&family=Raleway:ital,wght@1,300;1,400&display=swap');
+
+
+:root{
+
+--color-primary:#7380ec;
+--color-danger:#ff7782;
+--color-success:#41f1b6;
+--color-warning:#ffbb55;
+--color-white:#fff;
+--color-info-dark:#7d8da1;
+--color-light:#dce1ed;
+--color-dark:#f6f6f9;
+--color-info-light:rgba(132,139,200,0.18);
+--color-primary-variant:#111e88;
+--coloe-dark-variant:#674883;
+--coloe-background:#f6f6f9;
+
+--card-border-radius:2rem;
+--border-radius-1:0.4rem;
+--border-radius-2:0.8rem;
+--border-radius-3:1.2rem;
+
+
+--card-padding:1.8rem;
+--padding:1:0.4rem;
+--box-shoadow:0 0rem 3rem var(--color-light);
+
+
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+   height: 100vh;
+   width: 100vw;
+   font-size: 0.88rem;
+   overflow-x: hidden;
+    color: black;
+    
+}
+
+
+.dark-theme-variables{
+    --color-background:#181a1e;
+    --color-white:#202528;
+    --color-dark:#edeffd;
+    --color-dark-variables:#a3bdcc;
+    --color-light:rgb(0,0,0,0.4);
+    --box-shadow:0.2rem 3rem var(--color-light);
+    --colorinfo-ligth:#7d8da1;
+}
+
+
+.light-theme-variables{
+    --color-background:#f6f6f9;
+    --color-dark:#363949;
+    --color-white:#fff;
+    --color-dark-variables:#677483;
+    --color-light:rgb(132,139,200,0.18);
+    --box-shadow:0 0rem 3rem var(--color-light);
+    --colorinfo-ligth:#dce1eb;
+}
+
+
+
+
+h1{
+
+}
+h2{
+   color: var(--color-background);
+   font-size: 19px;
+   gap: 2;
+   margin-left: 2px;
+}
+
+h3{
+ 
+}
+
+h4{
+
+}
+
+h5{
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+ 
+}
+/* ============================================================================================================ */
+
+
+main{
+    display: grid;
+    width: 100vw;
+      
+     
+    grid-template-columns: 14rem auto 22rem;
+}
+
+
+aside{
+    height: 100vh;
+    background-color: var(--color-info-light);
+    overflow: hidden;
+}
+
+
+aside .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+
+.top img{
+    width: 2rem;
+    height: 2rem;
+}
+
+
+.top span{
+    color: var(--color-danger);
+}
+
+
+
+ .ashid1{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    top: 1rem;
+}
+
+aside h3{
+    font-weight: 500;
+}
+
+aside .ashid1 a{
+  display: flex;
+  color: var(--color-info-dark);
+   margin: 0.3rem 1rem; 
+  gap: 1rem;
+  align-items: center;
+  position: relative;
+   height: 3rem;
+   transition: all  300ms ease;
+}
+
+aside .ashid1 a span{
+    background-color: var(--color-danger);
+    font-size: 1.2rem;
+    border-radius: var(--border-radius-1);
+    padding: 0.1rem 0.2rem;
+}
+
+
+aside .ashid1 a:last-child{
+    position: absolute;
+    bottom: 3rem;
+   
+}
+
+
+aside .ashid1 a:active{
+    background-color: var(--color-light);
+    color: var(--color-primary);
+     margin-left: 0;
+}
+
+
+aside .ashid1 a:active::before{
+   content: " ";
+   width: 6px;
+   height: 100%;
+   background-color: var(--color-primary);
+}
+
+aside .ashid1 a:hover{
+    color: var(--color-primary);
+   margin-left: 5px;
+}
+
+
+
+/* =========================================================================================================== */
+
+.two{
+    background-color: var(--color-light);
+    margin-left: 3px;
+   
+    
+}
+
+.two .date{
+   background-color: var(--color-light);
+
+   margin-top: 1rem;
+   display: inline-block;
+   padding: 0.3rem 0.3rem;
+   
+}
+
+ .inside{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    gap: 1.5rem;
+     
+}
+
+.two .inside .card{
+    border-radius: var(--border-radius-2);
+     margin-top: 1rem;
+    background-color: var(--color-dark);
+    padding: var(--card-padding);
+    
+}
+
+.two .inside:hover{
+    box-shadow: none;
+    box-sizing: var(--box-shoadow);
+}
+
+
+
+.sales i{
+    background-color: var(--color-primary);
+    padding: .6rem;
+    border-radius: 50%;
+    color: white;
+    font-size: 1rem;
+}
+
+
+.expences i{
+    padding: .6rem;
+    border-radius: 50%;
+    color: white;
+    font-size: 1rem;
+    background-color: var(--color-danger);
+}
+
+
+.incom i{
+    background-color: var(--color-success);
+    padding: .6rem;
+    border-radius: 50%;
+    color: white;
+    font-size: 1rem;
+}
+
+
+.inside .middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.inside h3{
+    margin: 1rem 0.3rem;
+    font-size: 1rem;
+}
+
+
+
+.progress{
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+   
+}
+
+svg circle{
+    fill: none;
+    stroke: var(--color-primary);
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(35px, 10px);
+    stroke-dasharray: 110;
+    stroke-dashoffset: 50;
+}
+
+
+.sales svg circle{
+    stroke-dasharray: -60;
+    stroke-dashoffset: 50;
+}
+
+
+.expences svg circle{
+    stroke-dashoffset: -50;
+    stroke-dashoffset: 150;
+}
+
+
+.incom svg circle{
+    stroke-dashoffset: 115;
+    stroke-dasharray: 70;
+}
+
+
+
+.two .inside .progress .number{
+    position: absolute;
+    top: 0;
+    left: 23px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.two .text-mtted{
+     position: absolute;
+     top: 90px;
+}
+
+/* ============================================================================================================= */
+
+
+.recent-order{
+    padding-top: 1.3rem;
+   
+
+}
+
+
+.recent-order table{
+    background-color: var(--color-white);
+    width: 100%;
+    height: 42vh;
+    border-radius: var(--border-radius-2);
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+
+}
+
+
+.recent-order table:hover{
+    box-shadow: none;
+}
+
+
+.two table tbody tr td{
+    height: 1.5rem;
+    border-bottom: 1px solid var(--color-light);
+   
+}
+
+
+.two table tbody tr:last-child{
+    border: none;
+}
+
+
+
+.two .recent-order a{
+    text-align: center;
+    color: #111e88;
+    display: block;
+    margin: 0.7rem;
+}
+
+/* ======================================================================================================== */
+
+
+
+
+
+.three .top{
+   display: flex;
+   justify-content: end;
+   gap: 2rem;
+   margin-right: 130px;
+}
+
+
+
+.three button{
+    display: none;
+}
+
+
+ .three-toggrl{
+    background-color: var(--color-light);
+    border-radius: var(--border-radius-2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.8rem;
+    width: 4.5rem;
+    cursor: pointer;
+ }
+
+
+ .three-toggrl i{
+    font-size: 1.2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+
+ .three-toggrl i:hover{
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: var(--border-radius-1);
+ }
+
+
+ .three .top .profil{
+   display: flex;
+   text-align: right;
+   gap: 0.7rem;
+}
+
+.three .top .profile-photo img{
+  border-radius: 50%;
+}
+
+
+/* =============================================================================================== */
+
+
+
+.three .recent-updates h2{
+    margin-bottom: 0.5rem;
+    
+}
+
+
+
+.three .recent-updates .updates{
+    background-color: var(--color-white);
+    padding: 10px 20px;
+    
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+
+.three .recent-updates .updates:hover{
+    box-shadow: none;
+}
+
+
+
+.three .recent-updates .update .updates{
+    display: grid;
+    gap: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+
+
+.photo img{
+    height: 2rem;
+    width: 2rem;
+    border-radius: var(--card-border-radius);
+}
+
+
+/* ========================================================================================================== */
+
+
+ .sales-aaysitcs h2{
+     margin: 0.5 0;
+     
+}
+
+.three .sales-aaysitcs .item {
+    display: flex;
+    background-color: var(--color-white);
+    align-items: center;
+    border-radius: var(--border-radius-2);
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+    padding: 0.7rem;
+    box-shadow: var(--box-shoadow);
+    transition: all 300ms ease;
+}
+
+
+.three .sales-aaysitcs .item:hover{
+    box-shadow: none;
+}
+
+
+.three .sales-aaysitcs .item .tigth{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+}
+
+
+
+.three .sales-aaysitcs .item .icon{
+   padding: 0.6rem;
+   background-color: var(--color-white);
+   border-radius: 50%;
+
+}
+
+
+.three .sales-aaysitcs .online .icon{
+    background-color: var(--color-primary);
+}
+
+.three .sales-aaysitcs .offline .icon{
+     background-color: var(--color-danger);
+}
+
+
+.three .sales-aaysitcs .Customers .icon{
+     background-color: var(--color-success);
+}
+
+
+
+
+.three .sales-aaysitcs .add-product{
+    background-color: transparent;
+    border: 2px dashed var(--color-primary);
+    border-radius: var(--border-radius-2);
+    align-items: center;
+   
+}
+
+.three .sales-aaysitcs .add-product div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+    gap: 0.6rem;
+    height: 3rem;
+}
